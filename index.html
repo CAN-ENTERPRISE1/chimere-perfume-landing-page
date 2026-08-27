@@ -24,7 +24,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
 </noscript>
 <!-- End Meta Pixel Code -->
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&amp;family=Lora:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
   <style>
     :root {
       /* HERITAGE LUXURY EMERALD & GOLD COLOR PALETTE */
@@ -48,8 +48,8 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
       --text-dim: #707A75;
       
       --border-gold: rgba(212, 175, 55, 0.45);
-      --serif: 'EB Garamond', Georgia, serif;
-      --body-serif: 'Lora', Georgia, serif;
+     --serif: 'DM Serif Display', Georgia, serif;
+--body-serif: 'Lora', Georgia, serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -97,7 +97,7 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(212, 175, 55, 0.22) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(212, 175, 55, 0.10) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-inner { max-width: 820px; margin: 0 auto; position: relative; }
@@ -130,13 +130,14 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
     h1 em { font-style: italic; color: var(--gold-light); }
     
     .hero-sub {
-      font-family: var(--body-serif);
-      font-size: clamp(1.05rem, 2vw, 1.25rem);
-      color: var(--cream-alt);
-      max-width: 600px;
-      margin: 0 auto 12px;
-      line-height: 1.7;
-    }
+  font-family: var(--body-serif);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-style: italic;
+  color: var(--cream-alt);
+  max-width: 600px;
+  margin: 0 auto 12px;
+  line-height: 1.7;
+}
     .hero-sub2 {
       font-family: var(--serif);
       font-size: 1rem;
@@ -573,22 +574,44 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
 <body>
 
 <div class="topbar">
-  <span>⏳ OFFER ENDS IN:</span> <span class="timer-display" id="timer-topbar">30:00</span>
+  <span>⚡ SPECIAL LAUNCH PRICE — ₦2,999</span>
 </div>
 
 <section class="hero">
   <div class="hero-inner">
-    <div style="text-align:center;">
-      <img src="https://d1yei2z3i6k35z.cloudfront.net/15905494/69de1e1f3778b3.42344969_MOCKUP.jpeg" style="width:200px; border-radius:12px; display:block; margin:0 auto;">
-    </div>
-    <div class="stars">★★★★★</div>
 
-    <div class="badge">The Nigerian Perfume Guide</div>
-    <h1>Stop Wasting Money on Perfumes that don't last.</h1>
-    <p class="hero-sub">Discover the affordable perfumes that actually last in Nigerian weather, how to spot fakes before you buy, and how to smell expensive without spending ₦50,000–₦100,000 on a single bottle.</p>
-    <p class="hero-sub2">Know what to buy. Know where to buy it. Know how to make it last.</p>
-   <a href="https://nestuge.com/can-enterprise" class="cta-primary" onclick="fbq('track', 'InitiateCheckout');">Get The Complete Guide — ₦5,000</a>
-    <p class="cta-note"><span>⚠️ Price increases after the first 100 buyers.</span> Delivered instantly.</p>
+    <!-- 1. HEADLINE -->
+    <h1>Stop Wasting Money on Perfumes That Don't Last.</h1>
+
+    <!-- 2. SUBHEADLINE -->
+    <p class="hero-sub">
+      Discover the affordable perfumes that actually last in Nigerian weather,
+      how to spot fakes before you buy, and how to smell expensive without
+      spending ₦50,000–₦100,000 on a single bottle.
+    </p>
+
+    <!-- 4. CREATIVE -->
+    <div style="text-align:center; margin: 30px 0 22px;">
+      <img src="https://d1yei2z3i6k35z.cloudfront.net/15905494/6a8f6c92c73769.00497120_MockupForSmellRichSpendLess.png"
+           style="width:100%; max-width:400px; border-radius:12px; display:block; margin:0 auto;">
+    </div>
+
+    <!-- 6. CTA -->
+    <a href="https://nestuge.com/can-enterprise"
+       class="cta-primary"
+       onclick="fbq('track', 'InitiateCheckout');">
+      Get The Complete Guide — ₦2,999
+    </a>
+
+   <p class="hero-sub2" style="margin-top: 10px; margin-bottom: 12px;">
+  Know what to buy. Know where to buy it. Know how to make it last.
+</p>
+
+<p class="cta-note">
+  <span>⚠️ Price increases after the first 100 buyers.</span>
+  Delivered instantly.
+</p>
+
   </div>
 </section>
 
@@ -596,7 +619,9 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
   <div class="container">
     <p class="section-label">The Problem</p>
    <h2>You've Probably Wasted Money On Perfumes That Were Never Worth It.</h2>
-    <p class="problem-intro">You buy a perfume because it smells good in the shop. A few hours later, the scent is gone. Sometimes you later discover the bottle wasn't even original. You shouldn't have to keep guessing — or keep wasting money — just to smell good.</p>
+   <p class="problem-intro" style="font-style: italic;">
+  You buy a perfume because it smells good in the shop. A few hours later, the scent is gone. Sometimes you later discover the bottle wasn't even original. You shouldn't have to keep guessing or keep wasting money just to smell good.
+</p>
     <div class="problem-grid">
       <div class="problem-card">
         <div class="icon">💸</div>
@@ -630,7 +655,7 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
     <p class="problem-intro" style="margin-bottom:28px; text-align:center;">No confusion. No trial and error.</p>
     <div class="testimonial-pull">"Now I spend under ₦25,000 and people ask me what I'm wearing."</div>
     <div class="solution-cta">
-      <a href="https://nestuge.com/can-enterprise" class="cta-primary" onclick="fbq('track', 'InitiateCheckout');">Get The Complete Guide — ₦5,000</a>
+      <a href="https://nestuge.com/can-enterprise" class="cta-primary" onclick="fbq('track', 'InitiateCheckout');">Get The Complete Guide — ₦2,999</a>
     </div>
   </div>
 </section>
@@ -893,20 +918,17 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
 
 <section class="pricing-section" id="pricing">
   <div class="container">
-    <p class="section-label">Get Instant Access — ₦5,000</p>
-    <h2>Get The Complete Fragrance Guide For Just ₦5,000.</h2>
+    <p class="section-label">Get Instant Access — ₦2,999</p>
+    <h2>Get The Complete Fragrance Guide For Just ₦2,999.</h2>
     <div class="pricing-box">
       <div class="pricing-label">Limited Launch Price</div>
-      <div class="pricing-timer-box">
-        Discount Reserved For: <span class="timer-display" id="timer-pricing">30:00</span>
-      </div>
-      <div class="price-line"><span class="name">Smell Rich, Spend Less (Main Guide)</span><span class="amt">₦5,000</span></div>
+      <div class="price-line"><span class="name">Smell Rich, Spend Less (Main Guide)</span><span class="amt">₦2,999</span></div>
       <div class="price-line"><span class="name">Bonus 1: Sillage: How Far Should Your Perfume Travel?</span><span class="amt">FREE</span></div>
 <div class="price-line"><span class="name">Bonus 2: Scent That Lasts, Scents That Fills The Room</span><span class="amt">FREE</span></div>
 <div class="price-line"><span class="name">Bonus 3: The Fake Perfume Detector</span><span class="amt">FREE</span></div>
     <div class="price-was" style="margin-top: 20px;">Normal Value: ₦15,000</div>
-      <div class="price-now"><small>₦</small>5,000</div>
-      <a href="https://nestuge.com/can-enterprise" class="cta-primary" onclick="fbq('track', 'InitiateCheckout');">Get The Complete Guide — ₦5,000</a>
+      <div class="price-now"><small>₦</small>2,999</div>
+      <a href="https://nestuge.com/can-enterprise" class="cta-primary" onclick="fbq('track', 'InitiateCheckout');">Get The Complete Guide — ₦2,999</a>
       <p class="cta-notes">⚡ Delivered instantly. No waiting. No shipping.<br/><span>⚠️ Price increases after first 100 buyers.</span></p>
     </div>
     <div class="guarantee-box">
@@ -934,7 +956,7 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
       </div>
       <div class="faq-item">
         <div class="faq-q">Are the prices in the book accurate for 2026?</div>
-        <p class="faq-a">Yes. All prices were researched directly from Jumia, Jiji, D'Scentsation, and TheScentsStore and reflect current 2025–2026 Nigerian market prices.</p>
+        <p class="faq-a">Yes. All prices were researched directly from Jumia, Jiji, D'Scentsation, and TheScentsStore and reflect current 2026 Nigerian market prices.</p>
       </div>
       <div class="faq-item">
         <div class="faq-q">What if I don't find it useful?</div>
@@ -944,10 +966,20 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
         <div class="faq-q">Is this for men, women, or both?</div>
         <p class="faq-a">Both. The guide covers separate recommendations for men, women, and even children with affordable options for all budgets.</p>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Where do I go if I have questions after buying?</div>
-        <p class="faq-a">You get access to a WhatsApp contact after purchase where you can send any questions and receive direct answers.</p>
-      </div>
+     <div class="faq-item">
+  <div class="faq-q">Where do I go if I have questions after buying?</div>
+
+  <p class="faq-a">
+    You can reach me directly on WhatsApp if you have any questions about the guide or your purchase.
+  </p>
+
+  <a href="https://wa.me/2348022167044?text=Hello%20Chimere%2C%20I%20came%20from%20the%20Smell%20Rich%2C%20Spend%20Less%20sales%20page%20and%20I%20have%20a%20question."
+     target="_blank"
+     rel="noopener noreferrer"
+     style="display:inline-block; margin-top:12px; padding:12px 20px; background:#25D366; color:#fff; text-decoration:none; border-radius:6px; font-family:var(--serif); font-weight:700;">
+    💬 Chat With Me on WhatsApp
+  </a>
+</div>
     </div>
   </div>
 </section>
@@ -956,21 +988,20 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
   <div class="container">
     <h2>Stop Guessing. Start Buying Perfume With Confidence.</h2>
 
-    <p class="big">
-      You don't need to keep spending ₦100,000
-      just to find a fragrance that smells good and actually lasts.
-    </p>
+    <p class="big" style="font-style: italic;">
+  You don't need to keep spending ₦100,000 just to find a fragrance that smells good and actually lasts.
+</p>
 
-    <p class="big">
-      For just <strong>₦5,000</strong>, you get the complete guide plus
-      <strong>3 practical bonuses</strong> to help you choose better,
-      avoid fakes, and smell amazing without overspending.
-    </p>
+<p class="big" style="font-style: italic;">
+  For just <strong>₦2,999</strong>, you get the complete guide plus
+  <strong>3 practical bonuses</strong> to help you choose better,
+  avoid fakes, and smell amazing without overspending.
+</p>
 
     <a href="https://nestuge.com/can-enterprise"
        class="cta-primary"
        onclick="fbq('track', 'InitiateCheckout');">
-      Get The Complete Guide — ₦5,000
+      Get The Complete Guide — ₦2,999
     </a>
 
     <p class="cta-sub">
@@ -1012,64 +1043,5 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
   </div>
 </footer>
 
-<script>
- const CHECKOUT_URL = "https://nestuge.com/can-enterprise";
-const TIMER_DURATION = 30 * 60;
-
-function startOfferTimer() {
-  const displayTop = document.getElementById("timer-topbar");
-  const displayPricing = document.getElementById("timer-pricing");
-
-  let expiryTime = localStorage.getItem("perfumeOfferExpiry");
-
-  // Start a new 30-minute countdown if none exists
-  if (!expiryTime || Number(expiryTime) <= Date.now()) {
-    expiryTime = Date.now() + (TIMER_DURATION * 1000);
-    localStorage.setItem("perfumeOfferExpiry", expiryTime);
-  }
-
-  function updateTimer() {
-    const remaining = Math.max(
-      0,
-      Math.floor((Number(expiryTime) - Date.now()) / 1000)
-    );
-
-    const minutes = Math.floor(remaining / 60);
-    const seconds = remaining % 60;
-
-    const timeString =
-      String(minutes).padStart(2, "0") + ":" +
-      String(seconds).padStart(2, "0");
-
-    // Update BOTH timers
-    if (displayTop) {
-      displayTop.textContent = timeString;
-    }
-
-    if (displayPricing) {
-      displayPricing.textContent = timeString;
-    }
-
-    // When timer reaches zero
-    if (remaining <= 0) {
-      clearInterval(timerInterval);
-
-      localStorage.removeItem("perfumeOfferExpiry");
-
-      fbq("track", "InitiateCheckout");
-
-      window.location.href = CHECKOUT_URL;
-    }
-  }
-
-  // Start the countdown
-  const timerInterval = setInterval(updateTimer, 1000);
-
-  // Show the correct time immediately
-  updateTimer();
-}
-
-window.addEventListener("load", startOfferTimer);
-</script>
 </body>
 </html>
