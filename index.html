@@ -119,6 +119,32 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
     .stars { color: var(--gold-primary); font-size: 22px; margin-bottom: 6px; }
     .stars-label { font-family: var(--serif); font-size: 14px; color: var(--cream-alt); margin-bottom: 28px; letter-spacing: 0.04em; }
     
+    .urgency-badge {
+  display: inline-block;
+  background: rgba(190, 35, 35, 0.12);
+  border: 1px solid rgba(220, 70, 70, 0.55);
+  color: #FFB0B0;
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+  animation: urgencyPulse 2s ease-in-out infinite;
+}
+
+@keyframes urgencyPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.02);
+  }
+}
+
     h1 {
       font-family: var(--serif);
       font-size: clamp(2.4rem, 5vw, 3.8rem);
@@ -580,8 +606,13 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
 <section class="hero">
   <div class="hero-inner">
 
-    <!-- 1. HEADLINE -->
-    <h1>Stop Wasting Money on Perfumes That Don't Last.</h1>
+    <!-- URGENCY BADGE -->
+<div class="urgency-badge">
+  🔥 LIMITED LAUNCH — PRICE INCREASES AFTER 100 BUYERS
+</div>
+
+<!-- HEADLINE -->
+<h1>Stop Wasting Money on Perfumes That Don't Last.</h1>
 
     <!-- 2. SUBHEADLINE -->
     <p class="hero-sub">
@@ -591,7 +622,7 @@ src="https://www.facebook.com/tr?id=736476506034292&ev=PageView&noscript=1"/>
     </p>
 
     <!-- 4. CREATIVE -->
-    <div style="text-align:center; margin: 30px 0 22px;">
+    <div style="text-align:center; margin: 30px 0 48px;">
       <img src="https://d1yei2z3i6k35z.cloudfront.net/15905494/6a8f6c92c73769.00497120_MockupForSmellRichSpendLess.png"
            style="width:100%; max-width:400px; border-radius:12px; display:block; margin:0 auto;">
     </div>
